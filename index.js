@@ -7,6 +7,7 @@ const cors = require('cors');
 
 // middleware
 app.use(cors());
+app.use(express.json());
 
 // database setup
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.fbieij7.mongodb.net/?retryWrites=true&w=majority`;
